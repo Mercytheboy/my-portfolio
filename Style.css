@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Satisfy&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#01baef, #edafb8);
+  border-radius: 0.25vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0d2e42;
+}
+
+body {
+  font-family: "Golos Text", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #f2edeb;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.bio-container {
+  height: 100vh;
+  padding: 40px;
+
+  background: #040f16;
+  background-image: url(./Image/Contour\ Line.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav-style {
+  display: block;
+  text-decoration: none;
+  color: #f2edeb;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.nav-style:hover {
+  color: #edafb8;
+  transform: scale(95%);
+}
+
+nav ul {
+  margin-left: auto;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #f2edeb;
+}
+nav ul li a:hover {
+  color: #edafb8;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-img-container {
+  width: 500px;
+  max-height: 500px;
+  background-color: #f2edeb;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #01baef;
+  flex-shrink: 0;
+  margin-right: 30px;
+  box-shadow: -15px -15px #01baef;
+}
+
+.my-name {
+  font-family: "Satisfy", cursive;
+  color: #01baef;
+  font-size: 50px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 2px;
+}
+
+/* Portfolio section */
+.portfolio {
+  min-height: 100vh;
+  background: #f2edeb;
+  color: #040f16;
+  text-align: center;
+  padding: 40px;
+  background-image: url(./Image/blob-scene-haikei.svg);
+}
+
+.portfolio h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 2px 4px 4px #01baef;
+}
+.gallery {
+  margin: auto;
+  width: 80vw;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 20px;
+}
+
+.preview-card {
+  background: #edafb8;
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in;
+}
+
+.preview-card:hover {
+  transform: scale(110%);
+}
+
+.preview-img-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.preview-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-name {
+  text-transform: capitalize;
+}
+
+.site-link {
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #040f16;
+
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+
+  color: #040f16;
+  font-weight: 400;
+  transition: background-color 0.1s ease-out;
+}
+
+.site-link:hover {
+  color: #f2edeb;
+  background-color: #040f16;
+}
+/* 
+@media screen and (max-width: 375px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    width: 300px;
+    height: 300px;
+  }
+} */
